@@ -1,14 +1,15 @@
 <template>
  <div>
-    List
+   hello world
  </div>
 </template>
 
 <script>
 export default {
-  name: 'List'
+  name: 'Home'
 }
 </script>
 
 <style>
+
 </style>
