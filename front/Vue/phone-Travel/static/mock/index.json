@@ -1,0 +1,149 @@
+{
+  "data": {
+    "city": "南昌",
+    "swiperList": [{
+        "id": "0001",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1809/ff/1bf7d3a4f6591002.jpg_750x200_40809f2a.jpg"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/b6/38ea2abdaafa0f02.jpg_750x200_f47f3b0a.jpg"
+      }
+    ],
+    "iconList": [
+      {
+        "id": "0001",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+        "desc": "景点门票"
+      },
+      {
+        "id": "0002",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/f5/a963333e1fa802.png",
+        "desc": "本地玩乐"
+      },
+      {
+        "id": "0003",
+        "imgUrl": "https://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png",
+        "desc": "打卡圣地"
+      },
+      {
+        "id": "0004",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
+        "desc": "一日游"
+      },
+      {
+        "id": "0005",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png",
+        "desc": "游乐场"
+      },
+      {
+        "id": "0006",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
+        "desc": "泡温泉"
+      },
+      {
+        "id": "0007",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
+        "desc": "南昌必游"
+      },
+      {
+        "id": "0008",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/ec/0e1e0238e24ba02.png",
+        "desc": "婺源"
+      },
+      {
+        "id": "0009",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/3e/86314b2af03b7502.png",
+        "desc": "万达乐园"
+      },
+      {
+        "id": "0010",
+        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png",
+        "desc": "全部玩乐"
+      }
+    ],
+    "recommendList": [
+      {
+      "id": "0001",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1610/88/88ec04f6d021724da3.water.jpg_200x200_d9307de0.jpg",
+      "title": "大连海洋世界",
+      "desc": "浪漫大连首战，浪漫的海洋主题乐园"
+    },
+    {
+      "id": "0002",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1701/c0/c0899de1bcef6f9a3.img.jpg_200x200_b5b00164.jpg",
+      "title": "南昌新中原大剧院",
+      "desc": "唱戏啊，快活啊"
+    },
+    {
+      "id": "0003",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1705/1c/1c9ea91d1d73e159a3.water.jpg_200x200_7d604203.jpg",
+      "title": "南昌万达文化旅游城",
+      "desc": "万达玩人园，你值得死亡"
+    },
+    {
+      "id": "0004",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1610/83/83a873f755d64992a3.water.jpg_200x200_f7acbacd.jpg",
+      "title": "南昌万达主题公园",
+      "desc": "120米的跳楼机，跳下来你就死定了"
+    },
+    {
+      "id": "0005",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1610/88/88ec04f6d021724da3.water.jpg_200x200_d9307de0.jpg",
+      "title": "大连海洋世界",
+      "desc": "浪漫大连首战，浪漫的海洋主题乐园"
+    },
+    {
+      "id": "0006",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1602/49/4917c5b8d400d5b890.img.jpg_200x200_4e55a084.jpg",
+      "title": "凤凰沟",
+      "desc": "不要问我，我也不知道这个沟是干嘛的"
+    },
+    {
+      "id": "0007",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1711/63/6340336461c16842a3.img.png_200x200_ac63191b.png",
+      "title": "南昌金燕国际温泉",
+      "desc": "美女与温泉，想想也不错，嗯。。。继续敲代码"
+    },
+    {
+      "id": "0008",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1608/9c/9c744efe971f8966a3.water.jpg_200x200_3bfda054.jpg",
+      "title": "怪石岭生态公园",
+      "desc": "南昌假长城所在地"
+    }
+    ],
+    "weekendList": [
+      {
+      "id": "0001",
+      "imgUrl": "http://img1.qunarzz.com/sight/source/1505/74/a665dfecf12ae.jpg_r_640x214_5d22909a.jpg",
+      "title": "南昌必游TOP10",
+      "desc": "看山看谁，看看历史对南昌的侵润"
+    },
+    {
+      "id": "0002",
+      "imgUrl": "http://img1.qunarzz.com/sight/source/1509/6e/49ebb42da82957.jpg_r_640x214_29dfe99b.jpg",
+      "title": "南昌秋天美",
+      "desc": "深秋的南昌，秋风徐徐，落叶极美"
+    },
+    {
+      "id": "0003",
+      "imgUrl": "http://img1.qunarzz.com/sight/source/1505/df/9bcc134d126bc4.jpg_r_640x214_58a1f389.jpg",
+      "title": "陶醉青山绿水间",
+      "desc": "整个城市青山环绕，湖泊点缀其间"
+    },
+    {
+      "id": "0004",
+      "imgUrl": "http://img1.qunarzz.com/sight/source/1505/bd/688c12889af7ad.jpg_r_640x214_cc490c32.jpg",
+      "title": "带着宝贝玩乐",
+      "desc": "全家出游，可以说是再好不过的美事了"
+    },
+    {
+      "id": "0007",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1711/63/6340336461c16842a3.img.png_200x200_ac63191b.png",
+      "title": "红色景点巡礼",
+      "desc": "那段峥嵘的岁月中所留下的痕迹比比皆是"
+    }
+    ]  
+  },
+  "ret": true
+}
