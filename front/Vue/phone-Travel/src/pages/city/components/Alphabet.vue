@@ -29,5 +29,4 @@ export default {
     line-height .4rem
     color $bgColor
     text-align center
-  
 </style>
