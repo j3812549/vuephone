@@ -5,7 +5,7 @@
         <div class="title boreder-topbottom">当前城市</div>
         <div class="button-list">
           <div class="button-wrapper" >
-            <div class="button">北京</div>
+            <div class="button">{{this.$store.state.city}}</div>
           </div>
         </div>
       </div>
@@ -13,13 +13,25 @@
         <div class="title border-topbottom">热门城市</div>
         <div class="button-list">
           <div class="button-wrapper" >
-            <div class="button">北京</div>
+            <div class="button"
+              @click="handleCityClick"
+            >
+              北京
+            </div>
           </div>
           <div class="button-wrapper" >
-            <div class="button">北京</div>
+            <div class="button"
+              @click="handleCityClick"
+            >
+              上海
+            </div>
           </div>
           <div class="button-wrapper" >
-            <div class="button">北京</div>
+            <div class="button"
+              @click="handleCityClick"
+            >
+              宇宙
+            </div>
           </div>
           <div class="button-wrapper" >
             <div class="button">北京</div>
@@ -60,6 +72,13 @@ export default {
   name: 'CityList',
   mounted () {
     this.scroll = new Bscroll(this.$refs.wrapper)
+  },
+  methods: {
+    handleCityClick (city) {
+      city = city.target.innerText
+      this.$store.dispatch('changeCity', city)
+      this.$router.push('/')
+    }
   }
 }
 </script>
