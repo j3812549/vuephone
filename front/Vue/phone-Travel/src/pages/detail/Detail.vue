@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="detail">
     <detail-banner></detail-banner>
     <detail-header></detail-header>
     <div class="content">
@@ -44,7 +44,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.content{
-  height 50rem
-}
+.detail
+  overflow hidden
+  .content
+    height 50rem
 </style>
