@@ -6,7 +6,7 @@
         <div class="banner-tittle">南昌万达主题乐园</div>
         <div class="banner-number">
           <span class="iconfont banner-icon">&#xe63e;</span>
-          39
+          2
         </div>
       </div>
     </div>
