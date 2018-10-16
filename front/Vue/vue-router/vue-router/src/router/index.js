@@ -5,7 +5,12 @@ import Home from '@/pages/Home'
 Vue.use(Router)
 
 const User = {
-  template: '<div>User {{ $route.params.id }}</div>',
+  template: `
+  <div>
+    <h1>User {{ $route.params.id }}</h1>
+    <router-view></router-view>
+  </div>
+  `,
   watch: {
     // 使用watch监视路由的变化,可以使用 beforeRouteUpdate 导航守卫监视
     '$route' (to, from) {
@@ -31,7 +36,19 @@ export default new Router({
     },
     {
       path: '/user/:id',
-      component: User
+      component: User,
+      children: [
+        {
+          path: '1',
+          name: 'user1',
+          component: 1
+        },
+        {
+          path: '2',
+          name: 'user2',
+          component: 2
+        }
+      ]
     }
   ]
 })
