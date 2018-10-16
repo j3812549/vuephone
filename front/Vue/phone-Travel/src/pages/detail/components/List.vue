@@ -27,6 +27,7 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~styles/varibles'
+@import '~styles/mixins'
 .item-title-icon
   position relative
   left .06rem
@@ -38,6 +39,7 @@ export default {
   margin-right .1rem
   background-size .4rem 3rem
 .item-title
+  ellipsis()
   line-height .8rem
   font-size .32rem
   padding 0 .2rem

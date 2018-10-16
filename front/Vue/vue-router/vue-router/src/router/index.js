@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/pages/Home'
 
 Vue.use(Router)
 
@@ -30,21 +29,16 @@ const User = {
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'Home',
-      component: Home
-    },
-    {
       path: '/user/:id',
       component: User,
       children: [
         {
-          path: '1',
+          path: 'profile',
           name: 'user1',
           component: 1
         },
         {
-          path: '2',
+          path: 'posts',
           name: 'user2',
           component: 2
         }
