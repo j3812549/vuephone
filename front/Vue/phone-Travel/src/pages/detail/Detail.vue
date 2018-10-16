@@ -44,8 +44,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.detail
-  overflow hidden
   .content
     height 50rem
 </style>
