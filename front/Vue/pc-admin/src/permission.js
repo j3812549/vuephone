@@ -1,13 +1,10 @@
 import router from './router'
-import store from './store'
+// import store from './store'
 
 // const whiteList = ['/login'] // 不重定向白名单
 router.beforeEach((to, from, next) => {
   // if (getToken()) {
-  console.log('我爱你')
-  console.log(store)
-  console.log(to)
-  console.log(from)
+
   next()
   // if (to.path === '/login') {
   //   next({ path: '/' })

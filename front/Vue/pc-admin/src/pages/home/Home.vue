@@ -8,7 +8,7 @@
             <MenuItem name="1" class="layout-nav-meru">
             <Icon type="ios-navigate"></Icon>
               <router-link to="/home/profile">
-                菜单
+                用户
               </router-link>
             </MenuItem>
           </div>
@@ -16,26 +16,30 @@
       </Header>
       <Layout>
         <Sider hide-trigger :style="{background: '#fff'}">
-          <Menu active-name="1-2" theme="light" width="auto" :open-names="['1']">
-            <Submenu name="1">
-              <template slot="title">
-                <Icon type="ios-navigate"></Icon>
-                Item 1
-              </template>
-              <MenuItem name="1-1">Option 1</MenuItem>
-              <MenuItem name="1-2">Option 2</MenuItem>
-              <MenuItem name="1-3">Option 3</MenuItem>
-            </Submenu>
+          <Menu theme="light" width="auto" @on-select="ChangeMenu" >
+            <template v-for="item in routerList">
+              <side-menu-item
+                  v-if="item.children&&item.children.length!==0"
+                  :parent-item="item"
+                  :key="'menu-'+item.name"
+              >
+              </side-menu-item>
+              <menu-item v-else
+                  :name="item.name"
+                  :key="'menu-'+item.name"
+              >
+                  <Icon :type="item.meta.icon" :size="15"/>
+                  <span>{{ item.meta.title }}</span>
+              </menu-item>
+            </template>
           </Menu>
         </Sider>
         <Layout :style="{padding: '0 24px 24px'}">
           <Breadcrumb :style="{margin: '24px 0'}">
-            <BreadcrumbItem>Home</BreadcrumbItem>
-            <BreadcrumbItem>Components</BreadcrumbItem>
-            <BreadcrumbItem>Layout</BreadcrumbItem>
+            <BreadcrumbItem v-for="(item, index) of breadcrumbList" :key="index">{{item.title}}</BreadcrumbItem>
           </Breadcrumb>
           <Content :style="{padding: '24px', minHeight: '280px', background: '#fff'}">
-            <router-view></router-view>
+            <view-center></view-center>
           </Content>
         </Layout>
       </Layout>
@@ -44,20 +48,49 @@
 </template>
 
 <script>
+import sideMenuItem from './components/side-menu-item'
+import ViewCenter from './components/artical-publish-center'
+
 export default {
   name: 'Home',
+  components: {
+    sideMenuItem,
+    ViewCenter
+  },
   data () {
     return {
-
+      breadcrumbList: [
+        {
+          title: 'education'
+        },
+        {
+          title: 'education-1'
+        }
+      ],
+      routerList: []
     }
   },
   methods: {
-    get () {
-      console.log(this.$router.options)
+    getRouterList () {
+      let routes = this.$router.options.routes
+      for (var i = 0; i < routes.length; i++) {
+        if (routes[i].path === '/home') {
+          this.routerList = routes[i].children
+        }
+      }
+    },
+    ChangeMenu (val) {
+      this.breadcrumbList.splice(0, this.breadcrumbList.length)
+      var ary = val.split('/')
+      for (var i = 0; i < ary.length; i++) {
+        let obj = {'title': ary[i]}
+        this.breadcrumbList.push(obj)
+      }
+      this.$router.push({ path: '/home/' + val })
     }
   },
   mounted () {
-    this.get()
+    this.getRouterList()
   }
 }
 </script>
