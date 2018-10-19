@@ -36,7 +36,11 @@ export default {
       }
     },
     login () {
-      this.$router.push({path: '/home'})
+      this.axios.get('./../../../static/login/login.json')
+        .then((res) => {
+          console.log(res)
+          this.$router.push({path: '/home'})
+        })
     }
   },
   mounted () {
