@@ -4,6 +4,8 @@ vuex 3.0.1
 vue-router 3.0.1
 stylus 0.54.5
 stylus-loader 3.0.2
+axios 0.18.0
+
 
 iview 3.1.3————————UI框架
 # 关于class的命名
