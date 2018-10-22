@@ -19,6 +19,8 @@
 </template>
 
 <script>
+import { setToken } from '@/utils/auth'
+
 export default {
   name: 'Login',
   data () {
@@ -36,9 +38,10 @@ export default {
       }
     },
     login () {
-      this.axios.get('./../../../static/login/login.json')
+      this.axios.get(process.env.BASE_API + 'login/login.json')
         .then((res) => {
-          console.log(res)
+          var token = res.data.data.token
+          setToken(token)
           this.$router.push({path: '/home'})
         })
     }

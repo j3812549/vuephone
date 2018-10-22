@@ -4,7 +4,7 @@ import Vue from 'vue'
 import store from '@/store/index'
 import App from './App'
 import router from './router'
-import axios from 'axios'
+import axios from '@/utils/request.js'
 import iview from 'iview'
 import '@/permission' // 权限验证
 import 'stylus/reset/reset.css'
