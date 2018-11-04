@@ -1,0 +1,4 @@
+<!-- <view>Hello,world</view> -->
+<template name="a">
+	hello,template
+</template>

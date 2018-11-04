@@ -1,0 +1,33 @@
+<view>{{ msg }}</view>
+<view hidden='{{ flag ? true : false }}'>Hidden</view>
+<!-- <view>
+	<view
+		wx:for="{{ items }}"
+		wx:for-item="item"
+		wx:key="index"
+	>
+		<view>{{ index }} : {{ item.name }}</view>
+	</view>
+</view>
+
+<view class='wxif'>今天吃什么？</view>
+<view
+	wx:if="{{ condition === 1 }}"
+>
+饺子
+</view>
+<view
+	class='wxif'
+	wx:elif="{{ condition === 2 }}"
+>
+米饭
+</view>
+<view
+	class='wxif'
+	wx:else
+>
+面食
+</view> -->
+
+<import src="a.wxml"></import>
+<template is='a'></template>
